@@ -1,14 +1,18 @@
 package com.joeshaw.shiro_jwt.domain.entity;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 import lombok.experimental.Accessors;
 
 import javax.persistence.Table;
 
-
-@Data
+/**
+ * @author : wuwensheng
+ * @date : 10:37 2020/7/1
+ */
+@Getter
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode(callSuper = false,of = "userId")
 @Builder
 @Table(name = "sys_user")

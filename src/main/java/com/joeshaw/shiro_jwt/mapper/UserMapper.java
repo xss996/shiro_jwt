@@ -17,5 +17,5 @@ public interface UserMapper {
 
     LinkedHashMap<String, Object> selectUserPermissionByName(@Param("userName") String userId);
 
-    void insertUser(@Param("user") User user);
+    int insertUser(@Param("user") User user);
 }

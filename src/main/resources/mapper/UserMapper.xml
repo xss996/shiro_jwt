@@ -18,8 +18,8 @@
     <!--根据用户的userId查询出其对应的角色以及角色相关的所有权限-->
     <select id="selectUserPermissionById" parameterType="String" resultType="java.util.LinkedHashMap">
         SELECT u.userId,u.userName,u.password,u.userRemarks,
-         r.roleName,
-         r.roleRemarks,
+--          r.roleName,
+--          r.roleRemarks,
          GROUP_CONCAT(p.permissionsName)permissionsNameList,
          GROUP_CONCAT(p.perRemarks)perRemarksList
          FROM
